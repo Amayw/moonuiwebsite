@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Toast 弹出提示框 | MoonUI</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="一个UI组件库">
+    
+    <link rel="preload" href="/moonuiwebsite/assets/css/0.styles.36931b23.css" as="style"><link rel="preload" href="/moonuiwebsite/assets/js/app.0bee5fb0.js" as="script"><link rel="preload" href="/moonuiwebsite/assets/js/2.411ac4c9.js" as="script"><link rel="preload" href="/moonuiwebsite/assets/js/31.13b4eaa9.js" as="script"><link rel="prefetch" href="/moonuiwebsite/assets/js/10.5e2490d3.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/11.6d624ea8.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/12.a49c176b.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/13.473e0113.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/14.d8aa17d3.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/15.d33339ae.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/16.7c5d895c.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/17.163fd81c.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/18.bc5b0034.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/19.c2554d08.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/20.f9b82b3b.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/21.5ec2d848.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/22.9f9bc245.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/23.573fdc20.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/24.ad687b92.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/25.e5315814.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/26.51015d93.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/27.16cd22d3.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/28.4b9cdf61.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/29.f4384c8a.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/3.0cd2db93.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/30.9aa18558.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/32.a3296bd7.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/33.c8064178.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/4.3b352692.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/5.1acb9722.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/6.e2cc27b5.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/7.8b000cea.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/8.5ea536ca.js"><link rel="prefetch" href="/moonuiwebsite/assets/js/9.d4c9f6da.js">
+    <link rel="stylesheet" href="/moonuiwebsite/assets/css/0.styles.36931b23.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/moonuiwebsite/" class="home-link router-link-active"><img src="/moonuiwebsite/logo.png" alt="MoonUI" class="logo"> <span class="site-name can-hide">MoonUI</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/moonuiwebsite/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/moonuiwebsite/get-started/" class="nav-link">
+  文档
+</a></div><div class="nav-item"><a href="/moonuiwebsite/components/button/" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="https://github.com/Amayw/MoonUI" target="_self" class="nav-link external">
+  github
+  <!----></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/moonuiwebsite/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/moonuiwebsite/get-started/" class="nav-link">
+  文档
+</a></div><div class="nav-item"><a href="/moonuiwebsite/components/button/" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="https://github.com/Amayw/MoonUI" target="_self" class="nav-link external">
+  github
+  <!----></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>入门</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/moonuiwebsite/install/" class="sidebar-link">安装</a></li><li><a href="/moonuiwebsite/get-started/" class="sidebar-link">快速上手</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/moonuiwebsite/components/button.html" class="sidebar-link">Button 按钮</a></li><li><a href="/moonuiwebsite/components/input.html" class="sidebar-link">Input 输入框</a></li><li><a href="/moonuiwebsite/components/grid.html" class="sidebar-link">Grid 栅格</a></li><li><a href="/moonuiwebsite/components/layout.html" class="sidebar-link">Layout 布局</a></li><li><a href="/moonuiwebsite/components/tabs.html" class="sidebar-link">Tabs 标签</a></li><li><a href="/moonuiwebsite/components/popover.html" class="sidebar-link">Popover 弹出层</a></li><li><a href="/moonuiwebsite/components/toast.html" aria-current="page" class="active sidebar-link">Toast 弹出提示框</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/moonuiwebsite/components/toast.html#预览" class="sidebar-link">预览</a></li><li class="sidebar-sub-header"><a href="/moonuiwebsite/components/toast.html#使用方法" class="sidebar-link">使用方法</a></li><li class="sidebar-sub-header"><a href="/moonuiwebsite/components/toast.html#选项" class="sidebar-link">选项</a></li></ul></li><li><a href="/moonuiwebsite/components/collapse.html" class="sidebar-link">Collapse 折叠面板</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="弹出提示框"><a href="#弹出提示框" class="header-anchor">#</a> 弹出提示框</h1> <h2 id="预览"><a href="#预览" class="header-anchor">#</a> 预览</h2> <p><!----></p> <h2 id="使用方法"><a href="#使用方法" class="header-anchor">#</a> 使用方法</h2> <p>想要使用 Toast 组件，首先需要引入该组件,然后使用 Vue 官方文档中插件的使用方法使用该插件。<br>
+代码</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>wrapper<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>m-button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>auto<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>设置自动关闭时间<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>m-button</span><span class="token punctuation">&gt;</span></span><span class="token entity named-entity" title="&amp;nbsp;">&amp;nbsp;</span><span class="token entity named-entity" title="&amp;nbsp;">&amp;nbsp;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>m-button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>closeButton<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>点击按钮可提前关闭<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>m-button</span><span class="token punctuation">&gt;</span></span><span class="token entity named-entity" title="&amp;nbsp;">&amp;nbsp;</span><span class="token entity named-entity" title="&amp;nbsp;">&amp;nbsp;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>m-button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>supportHtml<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>支持 HTML 语法<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>m-button</span><span class="token punctuation">&gt;</span></span><span class="token entity named-entity" title="&amp;nbsp;">&amp;nbsp;</span><span class="token entity named-entity" title="&amp;nbsp;">&amp;nbsp;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>m-button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>top<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>上方弹出<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>m-button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>m-button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>middle<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>中间弹出<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>m-button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>m-button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bottom<span class="token punctuation">&quot;</span></span> <span class="token attr-name">zIndex</span><span class="token punctuation">&gt;</span></span>下方弹出<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>m-button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+  <span class="token keyword">import</span> Toast <span class="token keyword">from</span> <span class="token string">'../../../src/toast'</span>
+  <span class="token keyword">import</span> Button <span class="token keyword">from</span> <span class="token string">'../../../src/button'</span>
+  <span class="token keyword">import</span> plugin <span class="token keyword">from</span> <span class="token string">'../../../src/ToastPlugin'</span>
+
+  Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>plugin<span class="token punctuation">)</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    components<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string">'m-toast'</span><span class="token operator">:</span> Toast<span class="token punctuation">,</span> <span class="token string">'m-button'</span><span class="token operator">:</span> Button<span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function">auto</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$toast</span><span class="token punctuation">(</span><span class="token string">'我是 toast 内容'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          zIndex<span class="token operator">:</span><span class="token number">30</span><span class="token punctuation">,</span>
+          autoClose<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">closeButton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$toast</span><span class="token punctuation">(</span><span class="token string">'我是 toast 内容'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          zIndex<span class="token operator">:</span><span class="token number">30</span><span class="token punctuation">,</span>
+          closeButton<span class="token operator">:</span> <span class="token punctuation">{</span>
+            text<span class="token operator">:</span><span class="token string">'关闭'</span><span class="token punctuation">,</span>
+            <span class="token function-variable function">callback</span><span class="token operator">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+              console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'回调的输出'</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">supportHtml</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$toast</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;strong&gt;使用strong标签加粗的 toast&lt;/strong&gt;</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          zIndex<span class="token operator">:</span><span class="token number">30</span><span class="token punctuation">,</span>
+          enableHtml<span class="token operator">:</span><span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$toast</span><span class="token punctuation">(</span><span class="token string">'我是 toast 内容'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          position<span class="token operator">:</span> <span class="token string">'top'</span><span class="token punctuation">,</span>
+          zIndex<span class="token operator">:</span><span class="token number">30</span><span class="token punctuation">,</span>
+          closeButton<span class="token operator">:</span> <span class="token punctuation">{</span>
+            text<span class="token operator">:</span><span class="token string">'关闭'</span><span class="token punctuation">,</span>
+            <span class="token function-variable function">callback</span><span class="token operator">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+              console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'回调的输出'</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">middle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$toast</span><span class="token punctuation">(</span><span class="token string">'我是 toast 内容'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          position<span class="token operator">:</span> <span class="token string">'middle'</span><span class="token punctuation">,</span>
+          zIndex<span class="token operator">:</span><span class="token number">30</span><span class="token punctuation">,</span>
+          closeButton<span class="token operator">:</span> <span class="token punctuation">{</span>
+            text<span class="token operator">:</span><span class="token string">'关闭'</span><span class="token punctuation">,</span>
+            <span class="token function-variable function">callback</span><span class="token operator">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+              console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'回调的输出'</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">bottom</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$toast</span><span class="token punctuation">(</span><span class="token string">'我是 toast 内容'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          position<span class="token operator">:</span> <span class="token string">'bottom'</span><span class="token punctuation">,</span>
+          zIndex<span class="token operator">:</span><span class="token number">30</span><span class="token punctuation">,</span>
+          closeButton<span class="token operator">:</span> <span class="token punctuation">{</span>
+            text<span class="token operator">:</span><span class="token string">'关闭'</span><span class="token punctuation">,</span>
+            <span class="token function-variable function">callback</span><span class="token operator">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+              console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'回调的输出'</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="选项"><a href="#选项" class="header-anchor">#</a> 选项</h2> <h4 id="_1-zindex"><a href="#_1-zindex" class="header-anchor">#</a> 1. zIndex</h4> <p>此选项用于设定 Toast 组件在当前堆叠上下文中的堆叠层级。默认为20。(这是因为在使用 vuepress 编写文档时发现值为 20 才有效。)<br>
+若你的项目不可见 Toast 组件，尝试传入一个 <span style="color:#8397dc;background-color:#F8F8F8;">zIndex </span> 试试。</p> <h4 id="_2-autoclose"><a href="#_2-autoclose" class="header-anchor">#</a> 2. autoClose</h4> <p>此选项可以设定 Toast 自动关闭的延时。单位为“ 秒 ”，默认延时 5 秒后自动关闭。<br>
+代码</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>m-button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>auto<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>自动关闭的 Toast<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>m-button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+  <span class="token keyword">import</span> Toast <span class="token keyword">from</span> <span class="token string">'../../../src/Toast'</span>
+  <span class="token keyword">import</span> Button <span class="token keyword">from</span> <span class="token string">'../../../src/Button'</span>
+  <span class="token keyword">import</span> plugin <span class="token keyword">from</span> <span class="token string">'../../../src/ToastPlugin'</span>
+  Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>plugin<span class="token punctuation">)</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    components<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token string">'m-toast'</span><span class="token operator">:</span> Toast<span class="token punctuation">,</span> <span class="token string">'m-button'</span><span class="token operator">:</span> Button <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function">auto</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$toast</span><span class="token punctuation">(</span><span class="token string">'我是 toast 内容'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> autoClose<span class="token operator">:</span> <span class="token number">10</span> <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h4 id="_3-closebutton"><a href="#_3-closebutton" class="header-anchor">#</a> 3. closeButton</h4> <p>Toast 组件的右侧按钮文本可编辑，并且支持传入一个回调。 closeButton 选项接收一个对象。对象包括 text 与 callback 属性。用于设定按钮的文本与回调。<br>
+代码</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>m-button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>close<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>点我<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>m-button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+  <span class="token keyword">import</span> Toast <span class="token keyword">from</span> <span class="token string">'../../../src/Toast'</span>
+  <span class="token keyword">import</span> Button <span class="token keyword">from</span> <span class="token string">'../../../src/Button'</span>
+  <span class="token keyword">import</span> plugin <span class="token keyword">from</span> <span class="token string">'../../../src/ToastPlugin'</span>
+
+  Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>plugin<span class="token punctuation">)</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    components<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token string">'m-toast'</span><span class="token operator">:</span> Toast<span class="token punctuation">,</span> <span class="token string">'m-button'</span><span class="token operator">:</span> Button<span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$toast</span><span class="token punctuation">(</span><span class="token string">'我是 toast 内容'</span><span class="token punctuation">,</span> 
+         <span class="token punctuation">{</span>closeButton<span class="token operator">:</span> <span class="token punctuation">{</span> text<span class="token operator">:</span><span class="token string">'确定'</span><span class="token punctuation">,</span> <span class="token function-variable function">callback</span><span class="token operator">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'回调的输出'</span><span class="token punctuation">)</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span>
+        <span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h4 id="_4-enablehtml"><a href="#_4-enablehtml" class="header-anchor">#</a> 4. enableHtml</h4> <p>Toast 组件还支持 HTML 语法，该功能默认关闭，你需要传递一个 <span style="color:#8397dc;background-color:#F8F8F8;"> enableHtml </span> 参数来开启它, <code>enableHtml:true</code> 。 开启后就可以在 Toast 内容区域写 HTML 语法。</p> <h4 id="_5-position"><a href="#_5-position" class="header-anchor">#</a> 5. position</h4> <p>可以设定 Toast 弹出的位置 ，支持<span style="color:#8397dc;background-color:#F8F8F8;"> top </span>, <span style="color:#8397dc;background-color:#F8F8F8;"> middle </span>, <span style="color:#8397dc;background-color:#F8F8F8;"> bottom </span> 三个值。</p> <div class="language-vue extra-class"><pre class="language-vue"><code>this.$toast('我是 toast 内容', { position: 'top' })
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/moonuiwebsite/components/popover.html" class="prev">
+        Popover 弹出层
+      </a></span> <span class="next"><a href="/moonuiwebsite/components/collapse.html">
+        Collapse 折叠面板
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/moonuiwebsite/assets/js/app.0bee5fb0.js" defer></script><script src="/moonuiwebsite/assets/js/2.411ac4c9.js" defer></script><script src="/moonuiwebsite/assets/js/31.13b4eaa9.js" defer></script>
+  </body>
+</html>
